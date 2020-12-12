@@ -1,0 +1,26 @@
+// defining new bootstrap breakpoints
+
+@media(min-width: 1440px) {
+    .container {
+        max-width: 1300px;
+    }
+}
+
+@media(min-width: 1660px) {
+    .container {
+        max-width: 1480px;
+    }
+}
+
+@media(min-width: 1920px) {
+    .container {
+        max-width: 1665px;
+    }
+}
+
+@media(max-width: 767px){
+    .container{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

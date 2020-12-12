@@ -1,0 +1,304 @@
+.detail-page {
+    font-size: 1.8rem;
+
+    h3 {
+        text-transform: capitalize;
+        font-size: 2.8rem;
+        margin-bottom: 5px;
+    }
+
+    .status {
+        color: $green;
+        font-size: 2rem;
+        font-weight: 400;
+        display: inline-block;
+        padding-bottom: 1rem;
+    }
+
+    .rating {
+        font-size: 1.6rem;
+
+        .stars {
+            display: inline-block;
+
+            i.active {
+                color: $orange;
+            }
+        }
+
+        a {
+            font-weight: 300;
+        }
+
+        span {
+            display: inline-block;
+            padding-left: 15px;
+        }
+    }
+
+    .signup {
+        color: $red;
+        display: block;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+    }
+
+    P {
+        font-weight: 400;
+    }
+
+    .related-box {
+        padding-top: 2rem;
+        border: 1px solid $grey-bg;
+        border-width: 0 0 1px;
+
+        .image {
+            border-right: 1px solid $grey-bg;
+
+            img {
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        .item {
+            display: flex;
+            border: 1px solid $grey-bg;
+            border-bottom: none;
+        }
+
+        .text {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+
+            &.text-right {
+                padding-left: 0;
+            }
+
+            p {
+                font-size: 1.2rem;
+                color: $dark-grey-color;
+                line-height: initial;
+            }
+
+            .title {
+                color: $dark-grey-color;
+                font-weight: 600;
+                padding-top: 0;
+                font-size: 1.6rem;
+            }
+        }
+
+        .qty {
+            font-size: 1.2rem;
+            padding-top: 1.2rem;
+            margin-top: auto;
+
+            input {
+                width: 5rem;
+                text-align: center;
+                margin-right: 10px;
+                border: 1px solid $grey-bg;
+                height: 2.5rem;
+            }
+        }
+
+        .price {
+            color: $green;
+            font-weight: 600;
+            margin-bottom: auto;
+        }
+
+        .price+p {
+            margin-bottom: 0;
+        }
+    }
+
+    .interact {
+        align-items: center;
+        padding: 2.5rem 0;
+        display: flex;
+        align-items: flex-end;
+
+        .social {
+            font-size: 2.25rem;
+            margin: 0 -3px -6px;
+            margin-left: auto;
+
+            a {
+                display: inline-block;
+                margin: 0 5px;
+            }
+
+            .fb {
+                color: #3A559F;
+            }
+
+            .twitter {
+                color: #50ABF1;
+            }
+
+            .insta {
+                color: #C6474E;
+            }
+        }
+    }
+
+    .main-product {
+        padding-bottom: 4.5rem;
+
+
+        .main-image {
+            border: 1px solid $grey-bg;
+
+            @include media-breakpoint-up(lg) {
+                margin-right: 5px;
+                max-width: 88%;
+            }
+        }
+    }
+
+    .sidebar {
+
+        .related-wrapper {
+            font-size: 1.6rem;
+            border: 1px solid $grey-bg;
+            border-top: 4px solid $grey-color;
+
+            h4 {
+                padding-bottom: 1.5rem;
+            }
+
+            .image {
+                line-height: initial;
+                border: 1px solid $grey-bg;
+                transition: .3s;
+            }
+
+            .item {
+                display: flex;
+                align-items: center;
+                border-top: 1px solid $grey-bg;
+                margin: 0 -2rem;
+                padding: 0 2rem;
+
+                .title {
+                    padding-top: 0;
+                    margin: 0;
+                    line-height: initial;
+                    transition: .3s;
+                }
+
+                .text {
+                    padding: 10px;
+                }
+
+
+                &:hover {
+                    .title {
+                        text-shadow: 0 0 1px grey;
+                    }
+
+                    .image {
+                        box-shadow: 0 0 12px rgba(128, 128, 128, 0.452);
+                        border: 1px solid transparent;
+                    }
+                }
+
+            }
+
+            .varient {
+                padding-top: 10px;
+                display: flex;
+
+                .price {
+                    font-weight: 700;
+                    margin-right: 3px;
+                }
+            }
+        }
+    }
+
+    .addition-section {
+        h4 {
+            color: $dark-grey-color;
+        }
+
+        .nav-tabs {
+            border: 1px solid $grey-bg;
+            padding: 1.6rem 1.75rem;
+
+            .nav-item {
+                margin-bottom: 0;
+            }
+
+            .nav-link {
+                border: none;
+                padding: 0 1.25rem;
+
+                h4 {
+                    color: $grey-color;
+                    transition: .3s;
+                }
+
+                &.active {
+                    h4 {
+                        color: $red;
+                    }
+                }
+            }
+        }
+
+        .tab-content {
+            // height: calc(100% - var(--additionalTabHeight));
+            border: 1px solid $grey-bg;
+            border-top: none;
+            padding: 3rem;
+
+            table td {
+                border: 1px solid $grey-bg;
+                color: $grey-color;
+                padding: 1rem;
+            }
+        }
+
+        .related-product-list {
+            margin-bottom: 8rem;
+
+            .item {
+                padding: 0 7.5px;
+            }
+
+            .slick-list {
+                margin: 0 -7.5px;
+            }
+
+            .slick-dots li {
+                width: auto;
+                height: auto;
+                margin: 0 2.5px;
+
+                button {
+                    width: 2rem;
+                    height: 1rem;
+                    background: $grey-color;
+                    transition: .3s;
+
+                    &::before {
+                        display: none;
+                    }
+                }
+
+                &.slick-active {
+                    button {
+                        width: 3.5rem;
+                        background: $red;
+                    }
+                }
+            }
+        }
+    }
+
+
+}

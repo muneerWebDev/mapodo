@@ -1,0 +1,85 @@
+.listing {
+    color: $dark-grey-color;
+
+    .banner {
+        background: url("../images/listing.jpg") center center no-repeat;
+        background-size: cover;
+        padding: 8.5rem 0 5.5rem;
+
+        h1 {
+            color: #fff;
+            margin-bottom: 2rem;
+        }
+
+    }
+
+    .intro {
+        padding: 5rem 0 4rem;
+
+        p {
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+
+    .top-panel {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        padding-bottom: 2rem;
+
+        .sorter {
+            margin-right: auto;
+            font-size: 2rem;
+            font-weight: 400;
+
+            select {
+                height: 5rem;
+                width: 25rem;
+                padding: 1rem 2rem;
+                border: 1px solid #E8E7E7;
+                margin-left: 10px;
+                border-radius: 5px;
+                font-size: 1.6rem;
+                color: $dark-grey-color;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        .pagination {
+            border: 1px solid #E8E7E7;
+            border-width: 1px 0;
+
+            button,
+            input {
+                background: #fff;
+                border: 1px solid #E8E7E7;
+                border-width: 0 1px;
+                width: 3.5rem;
+                height: 3.5rem;
+                color: $dark-grey-color;
+                font-weight: 500;
+            }
+
+            input {
+                background: $red;
+                color: #fff;
+                text-align: center;
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            flex-direction: column;
+
+            .sorter {
+                margin: 0 auto 2rem;
+            }
+        }
+    }
+
+
+}
